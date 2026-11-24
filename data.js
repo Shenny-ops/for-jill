@@ -16,7 +16,7 @@ window.CARD_DATA = {
      ratio   : （選填）強制照片比例，例如 "4 / 5"；不填就顯示原比例          */
   photos: [
     { src: "assets/photos/photo1.jpg", alt: "大家一起坐車出門的自拍", caption: "PID Family" },
-    { src: "assets/photos/photo2.jpg", alt: "兩人拿著攝影師名牌的合照", caption: "PID Family", ratio: "4 / 5", focus: "50% 78%" },
+    { src: "assets/photos/photo2.jpg", alt: "兩人拿著攝影師名牌的合照", caption: "PID Family" },
     { src: "assets/photos/photo3.jpg", alt: "PID 大合照", caption: "PID Family" },
     { src: "assets/photos/photo4.jpg", alt: "大家一起吃飯的自拍", caption: "PID Family" }
     // 想加照片：複製上面一行，改成 photo5.jpg（最多建議 5 張）

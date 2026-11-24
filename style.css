@@ -449,11 +449,11 @@ body.modal-open { overflow: hidden; }
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    align-items: center;
   }
   .collage::-webkit-scrollbar { display: none; }
   .collage .polaroid { flex: 0 0 76vw; max-width: 340px; scroll-snap-align: center; margin: 0; padding: 12px 12px 0; }
   .collage .polaroid.reveal.in:hover, .collage .polaroid:hover { transform: rotate(var(--rot)); }
-  .collage .polaroid img { aspect-ratio: 4 / 3 !important; object-fit: cover; }
   .polaroid figcaption { font-size: 20px; padding: 8px 0 12px; }
   .slot-1, .slot-3 { --rot: -1.5deg; }
   .slot-2, .slot-4 { --rot: 1.5deg; }
