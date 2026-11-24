@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Little Note for You · 婕伶</title>
+  <meta name="description" content="A little collection of memories, words & warm wishes — from your PID family.">
+  <meta property="og:title" content="A Little Note for You · 婕伶">
+  <meta property="og:description" content="A little collection of memories, words & warm wishes — from your PID family.">
+  <meta property="og:image" content="assets/decorations/illustration.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='6' y='14' width='52' height='36' rx='4' fill='%23D8C7AE'/%3E%3Cpath d='M6 16 L32 36 L58 16' fill='none' stroke='%236F5948' stroke-width='3'/%3E%3Ccircle cx='32' cy='36' r='7' fill='%23BD866C'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Sans+TC:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#letters">跳到信件</a>
+
+  <!-- 1 · OPENING -->
+  <header class="opening" id="top">
+    <p class="eyebrow reveal-now">A LITTLE NOTE FOR YOU</p>
+
+    <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-label="打開信封">
+      <span class="envelope__float">
+        <img class="envelope__art" src="assets/decorations/illustration.png" alt="" aria-hidden="true">
+        <span class="envelope__back" aria-hidden="true"></span>
+        <svg class="envelope__fold" viewBox="0 0 560 360" preserveAspectRatio="none" aria-hidden="true"><path d="M0 360 L280 196 L560 360"/></svg>
+        <span class="envelope__flap" aria-hidden="true"></span>
+        <span class="envelope__seal" aria-hidden="true">J</span>
+        <span class="envelope__stamp" aria-hidden="true">
+          <span><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 32 C10 16 20 8 34 6 C32 20 24 30 8 32 Z"/><path d="M8 32 L26 14"/></svg></span>
+        </span>
+        <span class="envelope__postmark" aria-hidden="true"><span>PID</span><span>· 2026 ·</span></span>
+        <span class="envelope__dear">Dear 婕伶,</span>
+      </span>
+    </button>
+
+    <p class="opening__sub">A little collection of memories, words &amp; warm wishes.</p>
+    <p class="opening__sign">With love, your PID family.</p>
+    <p class="opening__hint" id="envelopeHint" aria-live="polite">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="1.5"/><path d="M3 7 L12 13 L21 7"/></svg>
+      <span>點一下信封打開 · Tap to open</span>
+    </p>
+
+    <a class="scroll-indicator" href="#moments">
+      <span>SCROLL TO EXPLORE</span>
+      <i aria-hidden="true"></i>
+      <svg viewBox="0 0 14 8" aria-hidden="true"><path d="M1 1 L7 7 L13 1"/></svg>
+    </a>
+  </header>
+
+  <main>
+    <!-- 2 · MOMENTS -->
+    <section class="section moments" id="moments" aria-labelledby="moments-title">
+      <div class="section__head reveal">
+        <p class="eyebrow">MOMENTS</p>
+        <h2 id="moments-title">Little Moments</h2>
+        <p class="section__sub">Some memories from our time together.</p>
+      </div>
+      <div class="collage" id="collage"></div>
+      <div class="collage-dots" id="collageDots" aria-hidden="true"></div>
+      <p class="collage-hint" aria-hidden="true">← 左右滑動看更多 →</p>
+    </section>
+
+    <!-- 3 · LETTERS -->
+    <section class="section letters" id="letters" aria-labelledby="letters-title">
+      <div class="section__head reveal">
+        <p class="eyebrow">LETTERS</p>
+        <h2 id="letters-title">Letters to You</h2>
+        <p class="section__sub"><span id="letterCount">15</span> little notes from people who are glad to know you.</p>
+      </div>
+      <ul class="letter-grid" id="letterGrid"></ul>
+    </section>
+
+    <!-- 4 · LITTLE THINGS -->
+    <section class="section wishes" id="wishes" aria-labelledby="wishes-title">
+      <div class="section__head reveal">
+        <p class="eyebrow">LITTLE THINGS</p>
+        <h2 id="wishes-title">Little Things We Appreciate</h2>
+      </div>
+      <div class="wish-board" id="wishBoard"></div>
+    </section>
+
+    <!-- 5 · CLOSING -->
+    <section class="closing" id="closing" aria-labelledby="closing-title">
+      <div class="closing__inner">
+        <figure class="polaroid closing__photo reveal" id="closingPhoto"></figure>
+        <div class="closing__text">
+          <svg class="leaf line" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 32 C10 16 20 8 34 6 C32 20 24 30 8 32 Z"/><path d="M8 32 L26 14"/></svg>
+          <h2 class="line" id="closing-title">Thank You, <span class="nowrap">婕伶.</span></h2>
+          <p class="line closing__lead">For your kindness, your warmth, and all the little things.</p>
+          <p class="line closing__lead">Wishing you all the best in what comes next.</p>
+          <p class="line closing__love">With love,</p>
+          <p class="line closing__pid">PID</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>A LITTLE MEMORY FROM PID · MADE WITH LOVE</span>
+        <a href="#top">Back to top ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <!-- LETTER MODAL -->
+  <div class="modal" id="letterModal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <article class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetLabel">
+      <header class="sheet__head">
+        <div>
+          <span class="sheet__eyebrow">LETTER</span>
+          <h3 class="sheet__label" id="sheetLabel">Note 01</h3>
+        </div>
+        <button class="icon-btn" type="button" data-close aria-label="關閉信件">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3 L13 13 M13 3 L3 13"/></svg>
+        </button>
+      </header>
+      <div class="sheet__body" id="sheetBody" tabindex="0">
+        <p class="sheet__message" id="sheetMessage"></p>
+        <p class="sheet__author" id="sheetAuthor"></p>
+      </div>
+      <footer class="sheet__foot">
+        <button class="text-btn" type="button" id="prevLetter">‹ 上一封</button>
+        <span class="sheet__count" id="sheetCount">01 / 15</span>
+        <button class="text-btn" type="button" id="nextLetter">下一封 ›</button>
+      </footer>
+    </article>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
