@@ -458,6 +458,7 @@ body.modal-open { overflow: hidden; }
   .slot-1, .slot-3 { --rot: -1.5deg; }
   .slot-2, .slot-4 { --rot: 1.5deg; }
   .slot-5 { --rot: -1deg; }
+  .slot-2 { order: 99; }          /* 直式照片在手機相簿排最後 */
 
   .collage-dots { display: flex; justify-content: center; gap: 8px; margin-top: 6px; }
   .collage-dots span { width: 6px; height: 6px; border-radius: 3px; background: var(--oat); transition: width .3s var(--ease), background .3s; }

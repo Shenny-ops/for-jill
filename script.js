@@ -44,7 +44,8 @@
   });
   // 手機版：滑動時更新小圓點
   collage.addEventListener("scroll", function () {
-    var items = collage.children;
+    // 依畫面上的實際位置排序（手機版直式照片會被排到最後）
+    var items = Array.prototype.slice.call(collage.children).sort(function (a, b) { return a.offsetLeft - b.offsetLeft; });
     if (!items.length) return;
     var center = collage.scrollLeft + collage.clientWidth / 2;
     var best = 0, bestDist = Infinity;
