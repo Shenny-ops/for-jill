@@ -66,7 +66,7 @@ farewell-card/
 
 ## 已完成的互動
 - 信封輕微浮動、點擊開信（封蓋翻開、插畫升起），之後自動捲到下一區
-- Scroll indicator、smooth scrolling
+- 開信後 smooth scrolling 到照片區
 - 照片進場淡入、hover 微微上浮放大；手機版左右滑動＋小圓點
 - 信件卡片 hover 上浮，點擊開啟信紙視窗；可用「上一封／下一封」、鍵盤 ← →、Esc 關閉，關閉後回到原本的卡片
 - 祝福紙條、結尾文字逐行淡入

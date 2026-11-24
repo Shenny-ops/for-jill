@@ -197,24 +197,13 @@ h2 {
 }
 .opening__sign { margin: 0; font-family: var(--hand); font-size: clamp(24px, 3vw, 28px); color: var(--coffee); }
 .opening__hint {
-  margin: 4px 0 0;
-  display: inline-flex; align-items: center; gap: 10px;
-  min-height: 46px; padding: 0 24px;
-  border: 1px solid var(--terracotta); border-radius: 999px;
-  font-size: 14px; letter-spacing: .06em;
+  margin: 2px 0 0;
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 13px; letter-spacing: .08em;
+  color: var(--ink);
   transition: opacity .4s;
 }
-.opening__hint svg { width: 18px; height: 18px; fill: none; stroke: var(--terracotta); stroke-width: 1.6; }
-
-.scroll-indicator {
-  position: absolute; left: 50%; bottom: 28px;
-  transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  font-size: 11px; letter-spacing: .3em; color: var(--ink); text-decoration: none;
-}
-.scroll-indicator i { width: 1px; height: 34px; background: var(--sage); }
-.scroll-indicator svg { width: 14px; height: 8px; fill: none; stroke: var(--ink); stroke-width: 1.4; animation: nudge 2s ease-in-out infinite; }
-@keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+.opening__hint svg { width: 16px; height: 16px; fill: none; stroke: var(--terracotta); stroke-width: 1.6; }
 
 /* =========================================================
    POLAROID (shared)
